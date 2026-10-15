@@ -54,7 +54,7 @@
     },
     {
       "group": "Mobile",
-      "items": ["React Native / Expo", "Capacitor", "Android", "iOS"]
+      "items": ["React Native", "Capacitor", "Android", "iOS"]
     }
   ],
   "education": [

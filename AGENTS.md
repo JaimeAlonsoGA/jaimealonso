@@ -16,6 +16,7 @@ Los archivos de `content/` y `public/` son el portfolio. La web y la API los lee
 | Orden y cuántos salen en "Featured work" (`/contact`) | `content/index.json` (`projectIds`, `lead`) |
 | Catálogo de tecnologías | `content/techs.json` |
 | Imágenes | `public/images/` |
+| Resumen PDF de una página (el botón Download) | `public/jaime_alonso_resume.pdf` |
 | Forma de esos datos | `lib/content/schema.ts` |
 
 Un proyecto con `status: "draft"` o `"archived"` no sale en la web pública. Borrar por API archiva: el proyecto sigue en el JSON.
@@ -48,7 +49,7 @@ El id de un proyecto es el nombre del archivo: `content/projects/sona.json` es `
 
 Un proyecto es una frase (`summary`), su tipo (`kind`: "App", "Web", "Tool", "Plugin", "CLI" o "Hardware"), su año (`year`, opcional: si no se sabe, no se pone), el stack, los enlaces y las imágenes. No hay página de detalle: al pulsar un proyecto se abre dentro de la rejilla (ancho completo, visor de imágenes y vídeo, stack y enlaces), y la URL pasa a `/projects/<id>`; esa URL, al cargarse, pinta la misma rejilla con el proyecto abierto. Projects y Stack comparten los filtros por `kind` (`components/kind-filter.tsx`), y `?kind=` viaja entre las dos. `/projects` es una rejilla bento: los `lead` primeros van grandes y `kind` da los filtros (`?kind=` en la URL). La primera imagen decide cómo se pinta: vertical = capturas de móvil en fila, horizontal = portada a sangre. El stack no es un enum: cada valor es un `id` de `content/techs.json`. Las tecnologías salen siempre en el mismo orden: por categoría (`lib/content/stack-order.ts`) y, dentro de cada una, en el orden de `techs.json`; `readPortfolio` lo aplica, así que da igual cómo lo liste el archivo. En las tarjetas, lo que no cabe se resume en "+N". Las imágenes se suben como WebP, máximo 1920 px; las capturas de pantalla completa se pintan dentro de una ventana (`components/screen-frame.tsx`) y las de móvil ya traen su marco.
 
-`/cv` es el CV para leer o imprimir y `/cv.txt` el mismo CV en texto. `/llms.txt` (formato llmstxt.org) es la puerta para agentes externos: quién es Jaime en dos líneas y enlaces absolutos a CV, contacto, stack y cada proyecto. Todo sale de estos archivos.
+`/cv` es el CV para leer. El botón Download de esa página, y `GET /jaime_alonso_resume.pdf`, sirven `public/jaime_alonso_resume.pdf`: el resumen de una página para RRHH. No lo generes otra vez; si Jaime trae un PDF nuevo, sustituye ese archivo. `/cv.txt` es el mismo CV en texto. `/llms.txt` (formato llmstxt.org) es la puerta para agentes externos: quién es Jaime en dos líneas y enlaces absolutos a CV, el PDF, contacto, stack y cada proyecto. Todo sale de estos archivos.
 
 ## Cambiar el portfolio desde un agente
 
@@ -80,7 +81,7 @@ Animaciones de la home: CSS (`enter-*` en `app/globals.css`), en orden de lectur
 
 ## Lo que leen agentes y buscadores
 
-Público y sin token: las páginas, `GET /api/v1` (la guía de la API), `GET /llms.txt` (que la enlaza en "Updating this portfolio"), `GET /cv.txt`, `GET /sitemap.xml`, `GET /robots.txt` y la imagen para compartir. Cada página lleva datos estructurados (schema.org, `lib/seo`): la persona y la web en todas, `ProfilePage` en inicio, CV y contacto, y cada proyecto como `CreativeWork`. `robots.txt` no cierra nada: la guía de la API debe poder leerse, y el resto responde 401 sin token.
+Público y sin token: las páginas, `GET /api/v1` (la guía de la API), `GET /llms.txt` (que la enlaza en "Updating this portfolio"), `GET /jaime_alonso_resume.pdf`, `GET /cv.txt`, `GET /sitemap.xml`, `GET /robots.txt` y la imagen para compartir. Cada página lleva datos estructurados (schema.org, `lib/seo`): la persona y la web en todas, `ProfilePage` en inicio, CV y contacto, y cada proyecto como `CreativeWork`. `robots.txt` no cierra nada: la guía de la API debe poder leerse, y el resto responde 401 sin token.
 
 ## Qué no hacer
 

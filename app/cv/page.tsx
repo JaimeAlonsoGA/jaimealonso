@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { LuArrowUpRight } from "react-icons/lu";
+import { LuArrowUpRight, LuDownload } from "react-icons/lu";
 import { Facts } from "@/components/facts";
 import { JsonLd } from "@/components/json-ld";
 import { ProfileLinks } from "@/components/link-icon";
-import { PrintButton } from "@/components/print-button";
 import { skillStyle } from "@/components/skill-icons";
 import { Eyebrow, GradientPanel, PageShell, Panel, PillLink } from "@/components/ui/surface";
 import { period } from "@/lib/content/format";
@@ -40,7 +39,10 @@ export default async function CvPage() {
             <p className="mt-4 max-w-xl text-white/90 leading-relaxed">{person.headline}</p>
             <div className="mt-6 flex flex-wrap items-center gap-2 print:hidden">
               <PillLink href={`mailto:${person.email}`} arrow>Email me</PillLink>
-              <PrintButton label="Save PDF" />
+              <PillLink href="/jaime_alonso_resume.pdf" variant="glass" download="jaime_alonso_resume.pdf">
+                <LuDownload aria-hidden className="h-4 w-4" />
+                Download
+              </PillLink>
             </div>
             <p className="mt-4 hidden text-sm print:block">
               {person.email} · {person.links.filter((link) => !link.href.startsWith("mailto:")).map((link) => link.href.replace(/^https?:\/\/(www\.)?/, "")).join(" · ")}

@@ -21,7 +21,7 @@ npm run dev
 ## Public
 
 - `/llms.txt` — who Jaime is and where to read more, for agents (llmstxt.org)
-- `/cv` and `/cv.txt` — the CV, as a page and as plain text
+- `/cv` and `/cv.txt` — the CV, as a page and as plain text. Download on `/cv` serves `/jaime_alonso_resume.pdf`
 - `/sitemap.xml`, `/robots.txt`, `/opengraph-image`
 
 ## Owner API

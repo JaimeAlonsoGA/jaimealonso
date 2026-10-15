@@ -36,6 +36,7 @@ export function renderLlms(portfolio: Portfolio, techs: Tech[]) {
     "## Profile",
     "",
     `- [CV](${url}/cv): experience, skills, education and languages`,
+    `- [Resume PDF](${url}/jaime_alonso_resume.pdf): the one-page resume, the file Download serves`,
     `- [CV as plain text](${url}/cv.txt): the same CV, best for reading in full`,
     `- [Contact](${url}/contact): email and profiles, based in ${city(person.location)}`,
     `- [Stack](${url}/stack): every technology and the projects that use it`,

@@ -156,12 +156,6 @@
     "category": "Mobile"
   },
   {
-    "id": "expo",
-    "name": "Expo",
-    "color": "#000020",
-    "category": "Mobile"
-  },
-  {
     "id": "capacitor",
     "name": "Capacitor",
     "color": "#119EFF",

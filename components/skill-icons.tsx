@@ -11,7 +11,6 @@ import {
   SiAndroid,
   SiCapacitor,
   SiDocker,
-  SiExpo,
   SiApple,
   SiNextdotjs,
   SiNodedotjs,
@@ -19,6 +18,7 @@ import {
   SiReact,
   SiTypescript,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 
 // Brand marks and colors come from Simple Icons; concepts use Lucide.
 // Near-black brand colors are lifted to white so they read on the dark hero.
@@ -35,7 +35,7 @@ const skills: Record<string, { icon: IconType; color: string }> = {
   "testing": { icon: LuFlaskConical, color: "#4ADE80" },
   "ui/ux": { icon: LuPalette, color: "#F472B6" },
   "ci/cd": { icon: LuInfinity, color: "#FBBF24" },
-  "react native / expo": { icon: SiExpo, color: "#FFFFFF" },
+  "react native": { icon: TbBrandReactNative, color: "#61DAFB" },
   "capacitor": { icon: SiCapacitor, color: "#119EFF" },
   "android": { icon: SiAndroid, color: "#34A853" },
   "ios": { icon: SiApple, color: "#FFFFFF" },
