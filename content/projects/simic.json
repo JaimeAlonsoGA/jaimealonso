@@ -9,7 +9,9 @@
     "python",
     "linux",
     "gtk",
-    "github-actions"
+    "github-actions",
+    "speech-to-text",
+    "llm"
   ],
   "links": [
     {

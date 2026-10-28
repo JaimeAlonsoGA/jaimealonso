@@ -156,6 +156,18 @@
     "category": "AI"
   },
   {
+    "id": "speech-to-text",
+    "name": "Speech to text",
+    "color": "#7C5CFF",
+    "category": "AI"
+  },
+  {
+    "id": "llm",
+    "name": "LLM",
+    "color": "#F59E0B",
+    "category": "AI"
+  },
+  {
     "id": "react native",
     "name": "React Native",
     "color": "#61DAFB",
