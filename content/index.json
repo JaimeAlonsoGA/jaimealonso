@@ -1,11 +1,12 @@
 {
-  "updatedAt": "2026-10-05T18:17:00.785Z",
+  "updatedAt": "2026-10-28T09:36:55.862Z",
   "lead": 4,
   "projectIds": [
     "grasshopper",
     "sona",
     "palantir",
     "compi",
+    "simic",
     "magic-envelope",
     "quickeys",
     "tibet",

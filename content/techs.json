@@ -30,6 +30,12 @@
     "category": "Languages"
   },
   {
+    "id": "python",
+    "name": "Python",
+    "color": "#3776AB",
+    "category": "Languages"
+  },
+  {
     "id": "react",
     "name": "React",
     "color": "#61DAFB",
@@ -171,6 +177,18 @@
     "id": "gnome",
     "name": "GNOME",
     "color": "#4A86CF",
+    "category": "Desktop & audio"
+  },
+  {
+    "id": "linux",
+    "name": "Linux",
+    "color": "#FCC624",
+    "category": "Desktop & audio"
+  },
+  {
+    "id": "gtk",
+    "name": "GTK",
+    "color": "#215D9C",
     "category": "Desktop & audio"
   },
   {

@@ -1,0 +1,33 @@
+{
+  "id": "simic",
+  "title": "Simic",
+  "summary": "Simic records any meeting on Linux and writes a Markdown transcript in your Obsidian vault. Whisper runs on your machine, from the computer's audio and the microphone, so it works with any call app.",
+  "kind": "App",
+  "year": 2026,
+  "status": "published",
+  "stack": [
+    "python",
+    "linux",
+    "gtk",
+    "github-actions"
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/JaimeAlonsoGA/simic-monorepo"
+    },
+    {
+      "label": "Website",
+      "url": "https://si-mic.vercel.app/"
+    }
+  ],
+  "media": {
+    "images": [
+      "/images/simic/hero.webp",
+      "/images/simic/features.webp",
+      "/images/simic/how.webp",
+      "/images/simic/mobile.webp"
+    ],
+    "video": null
+  }
+}
