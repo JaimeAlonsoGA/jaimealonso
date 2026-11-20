@@ -22,25 +22,25 @@
   ],
   "experience": [
     {
-      "company": "Welloop AB",
-      "role": "Agentic Software Developer",
+      "company": "Welloop AB (Sweden)",
+      "role": "Full-Stack Developer · Remote",
       "start": "2025-06",
-      "end": null,
+      "end": "2026-11",
       "points": [
-        "Developed Welloop, a PWA with more than 600 active users (production data, November 2026), with ongoing patches and updates using CI/CD and a Docker development environment.",
-        "Built an AI-native platform with security measures, payments, external integrations, notifications, team management (events and communications), and role and user management.",
+        "Developed Welloop, a PWA that currently has more than 600 active users (production data, November 2026), with constant patches and updates using CI/CD and a Docker development environment.",
+        "Built an AI-native platform that has high security measures, payments, external integrations, notifications, team management (events and communications), as well as extensive role and user management.",
         "Automated core development flows with AI agent tools and evaluation cycles."
       ]
     },
     {
-      "company": "MIRTO",
-      "role": "Software Developer",
+      "company": "MIRTO (Madrid)",
+      "role": "Full-Stack Developer · On-site",
       "start": "2024-06",
       "end": "2025-06",
       "points": [
-        "Developed and published the mobile app for MIRTO, a luxury clothing brand, integrated with Shopify and the company's services, for Android and iOS.",
+        "Developed and published the mobile application of Mirto, a luxury clothing brand, integrated with Shopify and with all the company's services, for Android and Apple.",
         "Developed the internal business operations application (analytics, notifications, factory operations, product stock and other external integrations).",
-        "Developed a Shopify plugin to synchronise catalogs between MIRTO's international stores."
+        "Developed a Shopify plugin to synchronize catalogs between Mirto's international stores."
       ]
     }
   ],

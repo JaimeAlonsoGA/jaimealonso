@@ -24,13 +24,13 @@ test("shipped content matches the schema and stays published", async () => {
   const techs = await readTechs();
   const sona = JSON.parse(await readFile(path.join(repoContent, "projects", "sona.json"), "utf8"));
   assert.equal(sona.id, "sona");
-  assert.equal(portfolio.projects.length, 17);
-  assert.equal(publishedProjects(portfolio).length, 16);
+  assert.equal(portfolio.projects.length, 18);
+  assert.equal(publishedProjects(portfolio).length, 17);
   assert.equal(portfolio.person.name, "Jaime Alonso");
   assert.equal(portfolio.person.role, "Software Developer");
   assert.deepEqual(
     portfolio.person.experience.map((job) => job.company),
-    ["Welloop AB", "MIRTO"],
+    ["Welloop AB (Sweden)", "MIRTO (Madrid)"],
   );
   assert.equal(portfolio.person.skills.length, 3);
   assert.ok(sona.stack.includes("react"));
@@ -54,7 +54,7 @@ test("agents can create, archive, and reorder without touching other projects", 
       media: { images: ["/images/sona/frame1.webp"], video: null },
       status: "draft",
     });
-    assert.equal(publishedProjects(created).length, 16);
+    assert.equal(publishedProjects(created).length, 17);
     assert.equal(created.projects.at(-1)?.id, "agent-note");
     assert.equal(
       await readFile(path.join(directory, "projects", "sona.json"), "utf8"),
