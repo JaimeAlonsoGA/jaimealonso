@@ -4,7 +4,7 @@
   "email": "alonsog.jaime@gmail.com",
   "role": "Software Developer",
   "location": "Madrid, Spain",
-  "workArrangement": "Freelance",
+  "workArrangement": "Available",
   "headline": "I build fullstack applications and coordinate AI agent teams, from software architecture and databases to UI/UX and production monitoring.",
   "links": [
     {
@@ -27,9 +27,9 @@
       "start": "2025-06",
       "end": null,
       "points": [
-        "Develop web applications and backend services for Welloop's youth sports platform using Next.js, React, Node.js and TypeScript.",
-        "Build an AI-powered chat app with custom permission access, alongside payments, integrations, notifications and a team management surface with events and communications.",
-        "Build and coordinate AI agent teams, automate development workflows, and use agent evaluations to test and refine their performance."
+        "Developed Welloop, a PWA with more than 600 active users (production data, November 2026), with ongoing patches and updates using CI/CD and a Docker development environment.",
+        "Built an AI-native platform with security measures, payments, external integrations, notifications, team management (events and communications), and role and user management.",
+        "Automated core development flows with AI agent tools and evaluation cycles."
       ]
     },
     {
@@ -38,8 +38,9 @@
       "start": "2024-06",
       "end": "2025-06",
       "points": [
-        "Built and launched MIRTO's mobile app and developed internal tools for analytics, notifications and factory operations.",
-        "Built a Shopify integration to synchronise product listings across international stores."
+        "Developed and published the mobile app for MIRTO, a luxury clothing brand, integrated with Shopify and the company's services, for Android and iOS.",
+        "Developed the internal business operations application (analytics, notifications, factory operations, product stock and other external integrations).",
+        "Developed a Shopify plugin to synchronise catalogs between MIRTO's international stores."
       ]
     }
   ],

@@ -21,7 +21,7 @@ Los archivos de `content/` y `public/` son el portfolio. La web y la API los lee
 
 Un proyecto con `status: "draft"` o `"archived"` no sale en la web pública. Borrar por API archiva: el proyecto sigue en el JSON.
 
-No hay campo de disponibilidad. Jaime está abierto a ofertas aunque esté trabajando. `workArrangement` dice cómo trabaja (hoy "Freelance"), no si está disponible.
+`workArrangement` es el dato de la franja Work (hoy "Available"). Jaime está abierto a ofertas.
 
 ## Cómo se actualiza
 
